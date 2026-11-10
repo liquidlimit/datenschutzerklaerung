@@ -1,58 +1,66 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerklärung</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            color: #333;
-        }
-        h1 {
-            color: #222;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liquid Limit Datenschutz</title>
+<style>
+  :root { --ink: #1d1b2f; --bg: #fffaf0; --soft: #6b6880; --accent: #6c4ee0; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #f3f1ff; --bg: #17151f; --soft: #a9a6bd; --accent: #a996ff; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 1.8rem; line-height: 1.2; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; }
+  a { color: var(--accent); }
+  .stand { color: var(--soft); }
+</style>
 </head>
 <body>
-    <h1>Datenschutzerklärung für die App „Liquid Limit“</h1>
-    <p><strong>Stand:</strong> 13. May 2025</p>
-    <p><strong>Verantwortlich:</strong> Jan Olfs</p>
-    <p><strong>Kontakt:</strong> app.liquidlimit@gmail.com</p>
+<main>
+<h1>Datenschutzerklärung für die App „Liquid Limit“</h1>
+<p class="stand">Stand: 10. November 2026</p>
 
-    <h2>1. Allgemeines</h2>
-    <p>
-        Diese App verarbeitet keine personenbezogenen Daten im Sinne der Datenschutz-Grundverordnung (DSGVO).
-        Die Nutzung erfolgt vollständig ohne Registrierung, Anmeldung oder Speicherung von personenbezogenen Informationen wie Name, Adresse, Standort oder Nutzungsverhalten.
-    </p>
+<h2>1. Verantwortlicher</h2>
+<p>Jan Olfs<br>Potsdamer Straße 31A<br>12205 Berlin<br>E-Mail: <a href="mailto:app.liquidlimit@gmail.com">app.liquidlimit@gmail.com</a></p>
 
-    <h2>2. Technische Daten</h2>
-    <p>
-        Die App benötigt folgende Systemfunktionen, um ordnungsgemäß zu funktionieren:
-    </p>
-    <ul>
-        <li><strong>Bluetooth</strong>: zur Kommunikation mit Geräten in der Nähe. Je nach Android-Version kann das System eine Standortfreigabe anfordern, die jedoch <strong>nicht von der App selbst verwendet</strong> wird.</li>
-        <li><strong>Internetverbindung</strong>: zur Kommunikation mit einem externen Server über Socket.io. Dabei wird technisch bedingt die IP-Adresse verarbeitet. Diese Daten werden nicht gespeichert oder ausgewertet.</li>
-    </ul>
+<h2>2. Das Wichtigste in Kürze</h2>
+<p>Liquid Limit braucht kein Konto, zeigt keine Werbung und enthält keine Analyse- oder Tracking-Werkzeuge. Spieler, Statistik und Einstellungen bleiben auf deinem Gerät. Daten verlassen das Gerät nur, wenn du selbst einen Raum eröffnest oder betrittst, eine Rückmeldung schickst oder einem Fehlerbericht zustimmst.</p>
 
-    <h2>3. Keine Analyse, kein Tracking</h2>
-    <p>
-        Die App verwendet <strong>keine</strong> Analyse- oder Trackingdienste, <strong>keine Cookies</strong> und <strong>keine Werbung</strong>. Es werden keine personenbezogenen Daten an Dritte weitergegeben.
-    </p>
+<h2>3. Daten auf deinem Gerät</h2>
+<p>Die App speichert lokal auf deinem Gerät: die angelegten Spielernamen und -farben, die Spielstatistik, deine Einstellungen und die zuletzt verbundene Waage (Name und Geräteadresse). Wir haben darauf keinen Zugriff. Du löschst diese Daten in der App unter „Einstellungen → Zurücksetzen“ oder indem du die App deinstallierst.</p>
+<p>Android kann diese Daten in die Sicherung deines Google-Kontos aufnehmen (Android-Auto-Backup), damit sie nach einer Neuinstallation wieder da sind. Das steuerst du in den Android-Einstellungen; dafür gilt die Datenschutzerklärung von Google.</p>
 
-    <h2>4. Deine Rechte</h2>
-    <p>
-        Da keine personenbezogenen Daten erhoben oder gespeichert werden, bestehen im Regelfall keine personenbezogenen Datensätze, auf die sich Betroffenenrechte beziehen. Du kannst dich bei Fragen dennoch jederzeit an den App-Entwickler wenden.
-    </p>
+<h2>4. Bluetooth und Standort</h2>
+<p>Um deine Waage zu finden, sucht die App nach Bluetooth-Geräten in der Nähe und zeigt deren Namen an. Gewichtswerte und Gerätedaten werden nur auf deinem Gerät verarbeitet. Bis Android 11 verlangt Android für die Bluetooth-Suche die Standortberechtigung; die App liest deinen Standort dabei nicht aus und speichert ihn nicht.</p>
 
-    <h2>5. Kontakt</h2>
-    <p>
-        Bei Fragen zum Datenschutz erreichst du uns unter:<br>
-        Jan Olfs<br>
-        app.liquidlimit@gmail.com
-    </p>
+<h2>5. Kamera (QR-Code)</h2>
+<p>Zum Beitreten eines Raums kannst du einen QR-Code scannen. Auf Android übernimmt das der Code-Scanner der Google Play-Dienste, die App selbst bekommt keinen Kamerazugriff, sondern nur den erkannten Raumcode. Die Bilder werden auf dem Gerät verarbeitet.</p>
+
+<h2>6. Räume (gemeinsames Zuschauen)</h2>
+<p>Eröffnest du einen Raum, schickt die App den aktuellen Spielstand an unseren Raum-Server, damit andere Geräte mitschauen können. Dazu gehören die Namen und Farben der Spieler, Punkte, gemessene Trinkmengen und die Meldungen im Spiel. Wer einem Raum beitritt, erhält diesen Spielstand.</p>
+<p>Der Server hält die Daten nur im Arbeitsspeicher und nur so lange, wie der Raum besteht. Er löscht sie, wenn der Gastgeber den Raum schließt, spätestens 15 Minuten nachdem der Gastgeber die Verbindung verloren hat, und bei jedem Neustart des Servers. Technisch bedingt verarbeitet der Server dabei die IP-Adresse deines Geräts.</p>
+<p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (du nutzt die Raum-Funktion auf eigenen Wunsch). Betrieben wird der Server bei Render Services, Inc., San Francisco, USA (siehe Abschnitt 9).</p>
+
+<h2>7. Rückmeldungen („Feedback“)</h2>
+<p>Unter „Feedback“ kannst du Fehler melden oder Wünsche schicken. Übertragen werden dein Text, ein freiwillig angegebener Name, von dir ausgewählte Bilder und, wenn du das Häkchen setzt, das Bluetooth-Diagnoseprotokoll (Namen und Adressen gefundener Geräte, Rohdaten der Waage). Automatisch dazu kommen App-Version, Betriebssystem, Gerätetyp (Browser-Kennung) und der Name der zuletzt verbundenen Waage.</p>
+<p>Unser Server legt daraus einen Eintrag (Issue) in einem nicht öffentlichen Projekt bei GitHub an, Bilder und Diagnose als Dateien darin. Dort bleiben die Daten, bis die Meldung bearbeitet ist und wir sie nicht mehr brauchen; auf Wunsch löschen wir sie sofort. Um Missbrauch zu verhindern, merkt sich der Server die IP-Adresse eine Stunde lang im Arbeitsspeicher (höchstens 10 Meldungen pro Stunde).</p>
+<p>Rechtsgrundlage ist deine Einwilligung, Art. 6 Abs. 1 lit. a DSGVO, die du mit dem Absenden gibst; für die IP-Begrenzung unser berechtigtes Interesse an einem sicheren Betrieb, Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+<h2>8. Fehlerberichte</h2>
+<p>Tritt in der App ein Fehler auf, merkt sie sich die Fehlermeldung samt technischer Fehlerstelle lokal. Beim nächsten Start fragt sie, ob sie einen Fehlerbericht senden darf. Nur wenn du zustimmst, wird er wie eine Rückmeldung (Abschnitt 7) übertragen, mit App-Version, Betriebssystem, Gerätetyp und Name der Waage, ohne Spielernamen. Lehnst du ab, wird der Fehler verworfen. Rechtsgrundlage ist deine Einwilligung, Art. 6 Abs. 1 lit. a DSGVO.</p>
+
+<h2>9. Empfänger und Übermittlung in die USA</h2>
+<ul>
+  <li><strong>Render Services, Inc.</strong> (USA): Betrieb des Raum- und Feedback-Servers.</li>
+  <li><strong>GitHub, Inc.</strong> (USA, Tochter der Microsoft Corporation): Ablage der Rückmeldungen und Fehlerberichte.</li>
+</ul>
+<p>Beide Anbieter sind nach dem EU-US Data Privacy Framework zertifiziert. Die Übermittlung in die USA stützt sich deshalb auf den Angemessenheitsbeschluss der EU-Kommission vom 10. Juli 2023 (Art. 45 DSGVO). Ergänzend sehen die Vertragsbedingungen beider Anbieter die EU-Standardvertragsklauseln vor.</p>
+
+<h2>10. Deine Rechte</h2>
+<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit sowie das Recht, der Verarbeitung auf Grundlage von berechtigtem Interesse zu widersprechen. Eine Einwilligung kannst du jederzeit für die Zukunft widerrufen. Schreib dafür an die oben genannte E-Mail-Adresse. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren.</p>
+
+<h2>11. Änderungen</h2>
+<p>Ändert sich die App so, dass andere Daten verarbeitet werden, passen wir diese Erklärung an. Es gilt die jeweils hier veröffentlichte Fassung.</p>
+</main>
 </body>
 </html>
